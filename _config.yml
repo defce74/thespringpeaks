@@ -1,18 +1,24 @@
 # Site settings
-title: Jekyll-Uno
-description: 'Jekyll-Uno - a minimal, responsive theme for Jekyll'
-url: 'http://joshgerdes.com/jekyll-uno'
-baseurl: '/jekyll-uno'
+title: The Spring Peaks
+description: >- # this means to ignore newlines until "baseurl:"
+  The Spring Peaks are a five piece rock band from Perth, Western Australia.
+  Jake Ostle (vocals, guitar),
+  Brad Shaw (guitar),
+  Jerram Gibson (keys),
+  Lucas Biral (bass),
+  Daniel Cavalli (drums).
+url: 'https://defce74.github.io/'
+baseurl: ''
 # google_analytics: 'UA-XXXXXX-X'
 # disqus_shortname: 'your-disqus-name'
 
 author:
-  name: 'Josh Gerdes'
-  email: josh@joshgerdes.com
-  twitter_username: joshgerdes
-  facebook_username: joshgerdes
-  github_username:  joshgerdes
-  linkedin_username:  joshgerdes
+  name: 'The Spring Peaks'
+  email: thespringpeaks@gmail.com
+  facebook_username: thespringpeaks
+  github_username:  defce74
+  instagram_username:  thespringpeaks_
+  spotify_username: thespringpeaks
 
 defaults:
   -
@@ -25,7 +31,7 @@ defaults:
 # Build settings
 destination: _site
 paginate: 10
-permalink: /:year/:title/
+permalink: /:categories/:title
 markdown: kramdown
 highlighter: rouge
 
