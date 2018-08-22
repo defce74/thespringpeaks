@@ -8,7 +8,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   Lucas Biral (bass),
   Daniel Cavalli (drums).
 url: 'https://defce74.github.io/'
-baseurl: ''
+baseurl: '/thespringpeaks'
 # google_analytics: 'UA-XXXXXX-X'
 # disqus_shortname: 'your-disqus-name'
 
