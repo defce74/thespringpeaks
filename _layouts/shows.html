@@ -1,0 +1,16 @@
+---
+layout: default
+---
+<div id="shows">  
+  <h3> shows </h3> 
+
+  <ul> <!-- create the list of posts -->
+
+    {% for post in site.tags.shows %} 
+      <li>
+        <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      </li>
+    {% endfor %}
+
+  </ul>
+</div>

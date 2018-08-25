@@ -31,7 +31,7 @@ defaults:
 # Build settings
 destination: _site
 paginate: 10
-permalink: /:categories/:title
+permalink: /posts/:categories/:title
 markdown: kramdown
 highlighter: rouge
 
