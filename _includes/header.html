@@ -3,7 +3,7 @@
   <i class="icon icon-x-circle btn-mobile-close__icon hidden"></i>
 </span>
 
-<header class="panel-cover" style="background-image: url({{ site.baseurl }}/assets/images/rabbit.jpg)">
+<header class="panel-cover" style="background-image: url({{ site.baseurl }}/assets/images/rabbit3.jpg)">
   <div class="panel-main">
 
     <div class="panel-main__inner panel-inverted">
@@ -16,11 +16,10 @@
         <!--<p class="panel-cover__description">{{ site.description }}</p>-->
 
         <div class="navigation-wrapper">
-
           <nav class="cover-navigation cover-navigation--primary">
             <ul class="navigation">
               <li class="navigation__item">
-                <a href="{{ site.baseurl }}/#blog" title="link to {{ site.title }} blog" class="blog-button">latest</a>
+                <a href="{{ site.baseurl }}/blog" title="link to {{ site.title }} blog" class="blog-button">latest</a>
               </li>
               <li class="navigation__item">
                   <a href="{{ site.baseurl }}/tags/music">music</a>
@@ -30,76 +29,46 @@
               </li>
             </ul>
           </nav>
-
           <hr class="panel-cover__divider panel-cover__divider--secondary">
-
           <nav class="cover-navigation navigation--social">
             <ul class="navigation">
-
-            {% if site.author.facebook_username %}
-              <!-- Facebook -->
               <li class="navigation__item">
                 <a href="http://fb.me/{{ site.author.facebook_username }}" title="{{ site.author.facebook_username }} on Facebook" target="_blank">
                   <i class="icon icon-social-facebook"></i>
-                  <span class="label">Facebook</span>
                 </a>
               </li>
-            {% endif %}
-
-            {% if site.author.instagram_username %}
               <li class="navigation__item">
                 <a href="https://www.instagram.com/{{ site.author.instagram_username }}" title="@{{ site.author.instagram_username }} on Instagram" target="_blank">
                   <i class="icon icon-social-instagram"></i>
-                  <span class="label">Instagram</span>
                 </a>
               </li>
-            {% endif %}
-
-            <li class="navigation__item">
-              <a href="https://itunes.apple.com/au/artist/the-spring-peaks/1207985216" title="Itunes" target="_blank">
-                <i class="icon icon-social-apple"></i>
-                <span class="label">Itunes</span>
-              </a>
-            </li>
-
-            {% if site.author.spotify_username %}
+              <li class="navigation__item">
+                <a href="https://itunes.apple.com/au/artist/the-spring-peaks/1207985216" title="Itunes" target="_blank">
+                  <i class="icon icon-social-apple"></i>
+                </a>
+              </li>
               <li class="navigation__item">
                 <a href="https://open.spotify.com/artist/1jA6iIFjHxKweEOXiF9gCx" title="{{ site.author.spotify_username }} on Spotify" target="_blank">
                   <i class="icon icon-social-spotify"></i>
-                  <span class="label">Spotify</span>
                 </a>
               </li>
-            {% endif %}
-
-            <li class="navigation__item">
-              <a href="https://soundcloud.com/thespringpeaks" title="Soundcloud" target="_blank">
-                <i class="icon icon-cloud"></i>
-                <span class="label">Soundcloud</span>
-              </a>
-            </li>
-
-            {% if site.author.email %}
-              <!-- Email -->
+              <li class="navigation__item">
+                <a href="https://soundcloud.com/thespringpeaks" title="Soundcloud" target="_blank">
+                  <i class="icon icon-cloud"></i>
+                </a>
+              </li>
               <li class="navigation__item">
                 <a href="mailto:{{ site.author.email }}" title="Email {{ site.author.email }}" target="_blank">
                   <i class="icon icon-mail"></i>
-                  <span class="label">Email</span>
                 </a>
               </li>
-            {% endif %}
-
-            {% if site.author.github_username %}
               <li class="navigation__item">
                 <a href="https://www.github.com/{{ site.author.github_username }}" title="{{ site.author.github_username }} on GitHub" target="_blank">
                   <i class="icon icon-social-github"></i>
-                  <span class="label">GitHub</span>
                 </a>
               </li>
-            {% endif %}
-
             </ul>
           </nav>
-
         </div>
 
       </div>
