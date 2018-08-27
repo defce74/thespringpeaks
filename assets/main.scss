@@ -2,19 +2,6 @@
 ---
 @import "uno";
 @import "tables";
-@import "monokai";
-
-/* Modifications */
-
-pre.highlight,
-.highlight pre {
-  padding: 10px;
-}
-
-pre.highlight code,
-.highlight pre code {
-  white-space: pre-wrap;
-}
 
 .btn,
 .navigation__item a {
