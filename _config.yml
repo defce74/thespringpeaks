@@ -10,7 +10,6 @@ description: >- # this means to ignore newlines until "baseurl:"
 url: 'https://defce74.github.io/'
 baseurl: '/thespringpeaks'
 # google_analytics: 'UA-XXXXXX-X'
-# disqus_shortname: 'your-disqus-name'
 
 author:
   name: 'The Spring Peaks'

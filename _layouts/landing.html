@@ -1,14 +1,41 @@
 <!DOCTYPE html>
 
-<html>
+<html class="landing">
 
   {% include head.html %}
 
   <body>
 
-    {% include header.html %}
+    <!-- <header class="panel-cover" style="background-image: url({{ site.baseurl }}/assets/images/rabbit.jpg)"> -->
+    <div class="landing-image">
 
-    {% include footer.html %}
+      <div class="landing-info">
+
+        <a href="{{ site.baseurl }}/" title="link to home of {{ site.title }}">
+          <img src="{{ site.baseurl }}/assets/images/wordmark.png" class="user-image" alt="My Profile Photo">
+        </a>
+
+        <nav>
+          <ul class="navigation">
+            <li class="navigation__item">
+              <a href="{{ site.baseurl }}/blog" title="link to {{ site.title }} blog" class="blog-button">latest</a>
+            </li>
+            <li class="navigation__item">
+              <a href="{{ site.baseurl }}/tags/music">music</a>
+            </li>
+            <li class="navigation__item">
+              <a href="{{ site.baseurl }}/tags/shows">shows</a>
+            </li>
+          </ul>
+        </nav>
+
+        {% include footer.html %}
+
+      </div> <!-- landing info -->
+
+      <div class="landing-overlay"></div>
+
+    </div> <!-- landing-image -->
 
   </body>
 
