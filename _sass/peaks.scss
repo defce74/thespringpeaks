@@ -1,7 +1,6 @@
 /* peaks.scss */
 @import 'https://fonts.googleapis.com/css?family=Special+Elite';
 // @import "animate";
-@import "foundation-icons"; /* foundation icons */
 
 body {
 	margin: 0; // padding: 0;
@@ -94,7 +93,8 @@ nav
 
 .social
 {
-	margin-bottom: -15px;
+	margin-bottom: -10px;
+
 	ul
 	{
 		padding-left: 0;
@@ -105,7 +105,7 @@ nav
 			a
 			{
 				color: #7fc9cf;
-				padding: 3px;
+				padding: 2px;
 				&:hover { color: #4f9ec9; }
 
 				i {	font-size: 30px; }
@@ -117,8 +117,19 @@ nav
 footer
 {
 	color: #ebbc16;
-	margin-bottom: 20px; // padding-bottom: 50px;
-	.copyright { font-size: .8em; }
+	.copyright
+	{
+		font-size: .8em;
+		// margin-top: 50px;
+		// padding-top: 20px;
+	}
+
+	&.landing
+	{
+		position:absolute;
+		bottom:15px;
+		width:100%;
+	}
 }
 
 h1, h2, h3, h4, h5, h5 { color: #a746f5; }
