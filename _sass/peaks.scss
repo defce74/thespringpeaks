@@ -1,0 +1,253 @@
+/* peaks.scss */
+@import 'https://fonts.googleapis.com/css?family=Special+Elite';
+// @import "animate";
+@import "foundation-icons"; /* foundation icons */
+
+body {
+	margin: 0; // padding: 0;
+	height: 100%;
+	font-family: 'Special Elite', cursive;
+	font-size: 1em;
+	text-align: center;
+}
+
+.landing-image
+{
+	display: table;
+	height: 100%;
+	width: 100%;
+	background-image: url(./images/rabbit.jpg);
+	background-size: cover;
+	background-position: center center;
+
+	.landing-info
+	{
+		display: table-cell;
+		vertical-align: middle;
+		// text-shadow: 0 2px 2px rgba(0.0, 0.0, 0.0, 0.9);
+		z-index: 800; position: relative;
+	}
+
+	.landing-overlay
+	{
+		display: block;
+		position: absolute;
+		z-index: 0;
+		top: 0; right: 0; bottom: 0; left: 0;
+		background-color: rgba(24, 81, 117, 0.61); // 0.7
+	}
+}
+
+.user-image
+{
+    margin-bottom: 1.2em;
+    position: relative;
+    // width: 576px; height: 200px;
+    width: 288px; height: 100px;
+}
+
+html
+{
+	height: 100%;
+	&.default { background-color: rgba(24, 81, 117, 1.0); }
+	&.landing { /* max-height: 100%; */ }
+}
+
+.header-image
+{
+	background-image: url(./images/rabbit.jpg);
+	background-position: center center;
+	background-size: cover; // contain
+	background-repeat: no-repeat;
+	background-color: rgba(24, 81, 117, 0.7);
+  background-blend-mode: saturation; // overlay darken lighten saturation luminosity multiply
+	height: 300px; // width: 100%;
+
+	.header-info
+	{
+		z-index: 800; position: relative;
+		top: 5%; // left: 20%;
+	}
+}
+
+nav
+{
+	font-size: 1.5em;
+
+	ul
+	{
+		padding-left: 0;
+
+		li
+		{
+			display: inline-block;
+			a
+			{
+				color: #7ca9d5;
+				padding: 8px;
+				text-decoration: none;
+				&:hover { color: #4f9ec9; }
+			}
+		}
+	}
+}
+
+.social
+{
+	margin-bottom: -15px;
+	ul
+	{
+		padding-left: 0;
+
+		li
+		{
+			display: inline-block;
+			a
+			{
+				color: #7fc9cf;
+				padding: 3px;
+				&:hover { color: #4f9ec9; }
+
+				i {	font-size: 30px; }
+			}
+		}
+	}
+}
+
+footer
+{
+	color: #ebbc16;
+	margin-bottom: 20px; // padding-bottom: 50px;
+	.copyright { font-size: .8em; }
+}
+
+h1, h2, h3, h4, h5, h5 { color: #a746f5; }
+
+h1
+{
+	font-size: 3.5em;
+	margin-top: 50px;
+}
+
+h2 { font-size: 2.0em; margin-bottom: 0; }
+h3 { font-size: 1.3em; }
+h4 { font-size: 1.1em; }
+h5 { font-size: 1em; }
+
+p {
+	margin-bottom: 1.3em;
+	line-height: 1.7em; }
+
+strong { font-weight: bold; }
+em { font-style: italic; }
+
+ol { list-style-type: decimal; }
+
+.content
+{
+	margin: auto;
+	max-width: 750px;
+}
+
+.post-list
+{
+	list-style-type: none;
+	padding-left: 0;
+
+	li
+	{
+		margin-left: 0;
+		padding: 0;
+
+		a.title
+		{
+			text-decoration: none;
+			color: #7fc9cf;
+			font-size: 1.75em;
+			&:hover { color: #da7110; }
+		}
+	}
+
+	.tag a
+	{
+		text-decoration: none;
+		color: #899277;
+		font-size: 0.9em;
+		&:hover { color: #b7d63b; }
+	}
+
+	hr
+	{
+		width: 30%;
+		border-width: 1.0px;
+		border-style: solid;
+		border-color: #197b95
+	}
+}
+
+.post
+{
+	a
+	{
+		text-decoration: none;
+		color: #7cd580;
+		font-size: 1.25em;
+		&:hover { color: #c295a0; }
+	}
+
+	p
+	{
+		color: #c295a0;
+	}
+
+	img
+	{
+		max-width: 100%;
+		opacity: 0.45;
+	}
+}
+
+article
+{
+	.date { color: #a13e80; font-size: 1.25em; }
+}
+
+.date { color: #a13e80; font-size: .9em; }
+
+.excerpt {
+	margin: 0;
+	font-size: .9em;
+	color: #99a473; }
+
+@media all and (max-width: 750px)
+{
+	.header-image { /* background-blend-mode: multiply; */ }
+	.content
+	{
+		margin: 0px 10px 0px 10px; // top right bottom left
+		// margin: auto; /* width: 300px; */
+	}
+}
+
+.bandcamp
+{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	// opacity: 0.6;
+
+	// -webkit-filter: brightness(0.70) contrast(180%);
+	// filter: brightness(0.70) contrast(180%);
+	// grayscale(100%) hue-rotate(180deg) invert(100%) saturate(7)
+	// drop-shadow(8px 8px 10px green) sepia(100%) blur(1px)
+}
+
+.blur {-webkit-filter: blur(1px); filter: blur(1px);}
+.brightness {-webkit-filter: brightness(0.30); filter: brightness(0.30);}
+.contrast {-webkit-filter: contrast(180%); filter: contrast(180%);}
+.grayscale {-webkit-filter: grayscale(100%); filter: grayscale(100%);}
+.huerotate {-webkit-filter: hue-rotate(180deg); filter: hue-rotate(180deg);}
+.invert {-webkit-filter: invert(100%); filter: invert(100%);}
+.opacity {-webkit-filter: opacity(50%); filter: opacity(50%);}
+.saturate {-webkit-filter: saturate(7); filter: saturate(7);}
+.sepia {-webkit-filter: sepia(100%); filter: sepia(100%);}
+.shadow {-webkit-filter: drop-shadow(8px 8px 10px green); filter: drop-shadow(8px 8px 10px green);}

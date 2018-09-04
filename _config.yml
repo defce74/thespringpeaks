@@ -44,3 +44,6 @@ kramdown:
   hard_wrap: false
 
 exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'screenshot.png']
+
+future: true
+# timezone: 'Australia/Perth'

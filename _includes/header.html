@@ -1,17 +1,16 @@
 
-<!-- <header class="panel-cover" style="background-image: url({{ site.baseurl }}/assets/images/rabbit.jpg)"> -->
 <header class="header-image">
 
   <div class="header-info">
 
-    <a href="{{ site.baseurl }}/" title="link to home of {{ site.title }}">
-      <img src="{{ site.baseurl }}/assets/images/wordmark.png" class="user-image" alt="My Profile Photo">
+    <a href="{{ site.baseurl }}/">
+      <img src="{{ site.baseurl }}/assets/images/wordmark.png" class="user-image" alt="wordmark">
     </a>
 
     <nav>
       <ul class="navigation">
         <li class="navigation__item">
-          <a href="{{ site.baseurl }}/blog" title="link to {{ site.title }} blog" class="blog-button">latest</a>
+          <a href="{{ site.baseurl }}/blog">latest</a>
         </li>
         <li class="navigation__item">
             <a href="{{ site.baseurl }}/tags/music">music</a>
@@ -22,9 +21,13 @@
       </ul>
     </nav>
 
-  </div> <!-- header-info -->
+    {% if page.tags.size > 0 %}
+      <h1>{{ page.tags[0] }}</h1>
+    {% else %}
+      <h1>{{ page.title }}</h1>
+    {% endif %}
 
-  <div class="header-overlay"></div>
+  </div> <!-- header-info -->  
 
 </header>
 

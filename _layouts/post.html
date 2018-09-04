@@ -2,22 +2,20 @@
 layout: default
 ---
 <article>
-  <header class="post-header">
-    <div class="post-meta">
-      <time datetime="{{ page.date | date: "%Y-%m-%d %H:%M" }}" class="post-meta__date date">{{ page.date | date: "%-d %b %Y" }}</time>
 
-      {% if page.tags.size > 0 %}
-        &#8226; 
-        <span class="post-meta__tags"> on 
-          {% for tag in page.tags %}
-            <a href="{{ site.baseurl }}/tags/{{ tag }}">{{ tag }}</a> 
-          {% endfor %}
-        </span>
-      {% endif %}
+  <h2>{{ page.title }}</h2>
 
-    </div>
-    <h1 class="post-title">{{ page.title }}</h1>
-  </header>
+  <time datetime="{{ page.date | date: "%Y-%m-%d %H:%M" }}" class="date">
+
+    {% if page.tags[0] == 'music' %}
+      {{ page.date | date: "%b %Y" }}
+    {% else %}
+      {{ page.date | date: "%-d %b %Y %H:%M" }}
+    {% endif %}
+
+  </time>
+
   <section class="post"> {{ content }} </section>
+
 </article>
 
